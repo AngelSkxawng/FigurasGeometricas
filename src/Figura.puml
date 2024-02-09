@@ -1,0 +1,49 @@
+@startuml
+
+class Figura{
+    - String nombre
+    - float base
+    - float altura
+    - float apotema
+    - float lado
+    - double area
+    - double perimetro
+    + calcularArea()
+    + calcularPerimetro()
+    + verInformacion()
+}
+
+class Triangulo{
+     - String nombre
+     - float base
+     - float altura
+     + calcularArea()
+     + calcularPerimetro()
+     + verInformacion
+    
+}
+
+class Cuadrilateros{
+    - String nombre
+    - float lado
+    - float base
+    - float altura
+     + calcularArea()
+     + calcularPerimetro()
+     + verInformacion
+}
+
+class Poligonos{
+    - String nombre
+    - float lado
+    - float apotema
+    + calcularPerimetro
+    + calcularArea
+    + verInformacion()
+}
+
+
+Figura --|> Triangulo
+Figura --|> Cuadrilateros
+Figura --|> Poligonos
+@enduml
